@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>spektrogram</title>
+    <link rel='stylesheet' href='/css/style.css'>
+</head>
+
+<body>
+    <% include partials/nav.ejs %>
+    
+    profile name is <%= person %> <br>
+    <strong> lol <%= data.job %></strong>
+
+    <% data.hobbies.forEach(function(item) { %>
+
+        <li> <%= item %> </li>
+
+   <% }); %> 
+
+</body>
+
+</html>

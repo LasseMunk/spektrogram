@@ -1,1 +1,105 @@
-new style
+#pad_top {
+    padding-top: 40px;
+}
+#navbar {
+    width: 90%;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-top: 20px;
+    
+    border: none;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+}
+.navbar_logoText {
+    text-align: left;
+    border: none; 
+    color: #a0a0a0;
+    font-size: 30px;
+}
+
+.navbar_SoMeIcons {
+    text-align: right;  
+    border: none;  
+}
+
+.menu_line {
+    padding-top: 5px;
+}
+.navbar_menu {
+    text-align: left;
+    border-collapse: collapse;
+    border-spacing: none;
+}
+
+.navbar_spacer {
+    text-align: center;
+    font-weight: bold;
+    color: #a0a0a0;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+a:link, a:visited {
+    color:#000000; 
+    font-size:15px; 
+    text-decoration: none;
+
+}
+
+body.index a.index:link,
+body.about a.about:link,
+body.experiments a.experiments:link {
+    background-color:rgb(255, 172, 158);
+    border: none;
+}
+
+a:hover { 
+    border-bottom:none; 
+    background-color:rgb(255, 172, 158);
+    border-bottom: 1px solid #EF2400; 
+    color: #000000; 
+}
+
+.navbar_descriptionText {
+    text-align: right; 
+    color:#000000; 
+    font-size:15px; 
+ 
+}
+
+
+body { 
+    font-family: Arial, Helvetica, sans-serif, serif; 
+    font-size: 12px; 
+    color: #000000; 
+    background-color: #f9eacb; }
+
+h1 {
+    background-color: #f9eacb;
+}
+
+div {
+    background-color: #f9eacb;
+}
+
+p {
+    background-color: #f9eacb;
+}
+
+hr {    
+    
+    border-style: dashed;
+    border-color:  #c0c0c0;
+    border-top:1px;
+    width: 90%;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}

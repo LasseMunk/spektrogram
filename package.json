@@ -1,0 +1,24 @@
+{
+  "name": "spektrogram",
+  "version": "1.0.0",
+  "description": "spektrogram website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LasseMunk/spektrogram.git"
+  },
+  "author": "lasse munk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LasseMunk/spektrogram/issues"
+  },
+  "homepage": "https://github.com/LasseMunk/spektrogram#readme",
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3"
+  }
+}
