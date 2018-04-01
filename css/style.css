@@ -47,35 +47,23 @@ hr {
    LINK
 */
 
-a.index:link, a.about:link, 
-a.experiments:link, a:visited {
-    color:#000000; 
+a.navBar_index:link, a.navBar_about:link, 
+a.navBar_experiments:link{
+    
     font-size:15px; 
+    font-weight: bold;
     text-decoration: none;
     border:none;
-    background-color:  #f9eacb;
+    border-bottom: 1px solid #EF2400
 
 }
 
-a:link{
+a {
     color: #000000;
     font-size:12px;
-    border-bottom-color: #EF2400;
-    border-bottom: 1px solid;
     text-decoration: none;
-    background-color:rgb(255, 172, 158);
-}
+    border-bottom: 1px solid #EF2400; 
 
-a:visited {
-    color: #000000;
-     background-color:  #f9eacb;
-}
-
-body.index a.index:link,
-body.about a.about:link,
-body.experiments a.experiments:link {
-    background-color:rgb(255, 172, 158);
-    border: none;
 }
 
 a:hover { 
@@ -84,9 +72,6 @@ a:hover {
     border-bottom: 1px solid #EF2400; 
     color: #000000; 
 }
-
-
-
 
 /* 
     NAVIGATION
@@ -117,7 +102,8 @@ a:hover {
 
 .navbar_SoMeIcons {
     text-align: right;  
-    border: none;  
+    border: none; 
+    font-size: 12px; 
 }
 
 .menu_line {
