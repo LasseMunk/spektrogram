@@ -1,3 +1,97 @@
+
+/* 
+    GENERAL STYLES
+*/
+
+
+body { 
+    font-family: Arial, Helvetica, sans-serif, serif; 
+    font-size: 12px; 
+    color: #000000; 
+    line-height: 1.5; padding: .5em 0;
+    text-align: justify;
+    background-color: #f9eacb; }
+
+h1 {
+    background-color: #f9eacb;
+}
+
+div {
+    background-color: #f9eacb;
+}
+
+p {
+    background-color: #f9eacb;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+hr {    
+    
+    border-style: dashed;
+    border-color:  #c0c0c0;
+    border-top:1px;
+    width: 90%;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* 
+   LINK
+*/
+
+a.index:link, a.about:link, 
+a.experiments:link, a:visited {
+    color:#000000; 
+    font-size:15px; 
+    text-decoration: none;
+    border:none;
+    background-color:  #f9eacb;
+
+}
+
+a:link{
+    color: #000000;
+    font-size:12px;
+    border-bottom-color: #EF2400;
+    border-bottom: 1px solid;
+    text-decoration: none;
+    background-color:rgb(255, 172, 158);
+}
+
+a:visited {
+    color: #000000;
+     background-color:  #f9eacb;
+}
+
+body.index a.index:link,
+body.about a.about:link,
+body.experiments a.experiments:link {
+    background-color:rgb(255, 172, 158);
+    border: none;
+}
+
+a:hover { 
+    border-bottom:none; 
+    background-color:rgb(255, 172, 158);
+    border-bottom: 1px solid #EF2400; 
+    color: #000000; 
+}
+
+
+
+
+/* 
+    NAVIGATION
+*/
+
 #pad_top {
     padding-top: 40px;
 }
@@ -44,43 +138,7 @@
     padding-right: 15px;
 
 }
-a.index:link, a.about:link, 
-a.experiments:link, a:visited {
-    color:#000000; 
-    font-size:15px; 
-    text-decoration: none;
-    border:none;
-    background-color:  #f9eacb;
 
-}
-
-a:link{
-    color: #000000;
-    font-size:12px;
-    border-bottom-color: #EF2400;
-    border-bottom: 1px solid;
-    text-decoration: none;
-    background-color:rgb(255, 172, 158);
-}
-
-a:visited {
-    color: #000000;
-     background-color:  #f9eacb;
-}
-
-body.index a.index:link,
-body.about a.about:link,
-body.experiments a.experiments:link {
-    background-color:rgb(255, 172, 158);
-    border: none;
-}
-
-a:hover { 
-    border-bottom:none; 
-    background-color:rgb(255, 172, 158);
-    border-bottom: 1px solid #EF2400; 
-    color: #000000; 
-}
 
 .navbar_descriptionText {
     text-align: right; 
@@ -89,37 +147,10 @@ a:hover {
  
 }
 
+/* 
+    INDEX / PROJECT
+*/
 
-body { 
-    font-family: Arial, Helvetica, sans-serif, serif; 
-    font-size: 12px; 
-    color: #000000; 
-    background-color: #f9eacb; }
-
-h1 {
-    background-color: #f9eacb;
-}
-
-div {
-    background-color: #f9eacb;
-}
-
-p {
-    background-color: #f9eacb;
-}
-
-hr {    
-    
-    border-style: dashed;
-    border-color:  #c0c0c0;
-    border-top:1px;
-    width: 90%;
-    max-width: 950px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 30px;
-}
 
 .project_div {
     width: 90%;
@@ -127,25 +158,57 @@ hr {
     margin: auto;
 }
 
-    .main_video {
-    
-        width: 59%;
-        max-width: 550px;
-        height: 400px;
-        float: left;
-        margin-top: -42px;
-        background:none transparent;
-        overflow: hidden;
+.index_video_td {
+        width: 58.333333333333%; 
+        vertical-align: text-top;
+        padding-right:10px;
+        padding-top: 6px;
     }
-    
-    .main_video_text{
+
+    .main_video_div {
+        background:none transparent;      
+        width: 500px;
+        text-align: justify;
+        padding: 0px;
+    }
+
+    .main_video_text_td {
+        vertical-align: top;
+
+    }
+
+    .main_video_text_div{
         font-family: Arial, Helvetica, sans-serif, serif; 
         font-size: 12px; 
         line-height: 1.5; padding: .5em 0;
         text-align: justify;
+        vertical-align: top;
         padding: 0px;
-        overflow: auto;
+        border-collapse: collapse;
 
-        width: 40%;
-        float: right;
+        width: 100%;
+        min-width: 300px;
+     
     }
+
+/* 
+    ABOUT PAGE
+*/
+
+#about_header_div {
+    width: 90%;
+    max-width: 950px;
+    margin: auto;
+
+}
+
+#about_info_div {
+    border: 1px solid black;
+        width: 90%;
+    max-width: 950px;
+    margin: auto;
+}
+
+.about_headerImg {
+    width:100%;
+}

@@ -9,6 +9,7 @@ app.listen(3000); // start listening on port 3000
 // automatically serves everything in public folder
 // https://www.youtube.com/watch?v=-lRgL9kj_h0 static files
 app.use('/css', express.static('css'));
+app.use('/img', express.static('img'));
 // .use is middleware. Is serving the folder /css using express.static
 
 /*
