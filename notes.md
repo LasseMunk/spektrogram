@@ -1,9 +1,3 @@
-make alt tekst for alle videoer
-aalborg / cyrano
-https://www.youtube.com/watch?v=QlDTBUlZpbg
-
-
-
 npm install nodemon -g // package which helps restarting server.js when edits has been made to it.
 
 

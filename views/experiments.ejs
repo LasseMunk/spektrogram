@@ -2,14 +2,45 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61464505-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-61464505-1');
+    </script>
+
     <meta charset="UTF-8">
-    <title>spektrogram</title>
+    <meta name="spektrogram / Lasse Munk" content="spektrogram / Lasse Munk experiments with sound, theater, interactive installations, programming and electronics">
+    <title>spektrogram experiments with sound design and programming for theater and interactive installations</title>
     <link href='/css/style.css' rel='stylesheet' type='text/css' />
 </head>
 
 <body class='experiments'>
     <% include partials/nav.ejs %>
-        <br> experiments
+
+        <div class="experiments_div">
+            <% include experiments/exp_human_deception.ejs %>
+        </div>
+        <br>
+        <hr>   
+        <div class="experiments_div">
+            <% include experiments/exp_binaural_synthesis.ejs %>
+        </div>
+        <br>
+        <hr>
+        <div class="experiments_div">
+            <% include experiments/exp_phrenia.ejs %>
+        </div>
+        <br>
+        <hr>
+        <div class="experiments_div">
+            <% include experiments/exp_acoustic_seq.ejs %>
+        </div>
+        <br>
+        <hr>
 
 
 </body>
