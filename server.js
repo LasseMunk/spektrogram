@@ -1,5 +1,3 @@
-
-
 const express = require('express');
 const app = express();
 //app.disable('x-powered-by');
@@ -21,19 +19,14 @@ app.get('/', function(req, res){ // user request on ip:3000/
 
 
 app.get('/', function (req, res) { // user request on ip:3000/
-    res.render('index'); // express knows to look in views (ejs folder)
+    res.render('_pages/index'); // express knows to look in views (ejs folder)
 
 }); 
 
 app.get('/about', function (req, res) { // user request on ip:3000/
-    res.render('about');
+    res.render('_pages/about');
 }); 
 
 app.get('/experiments', function (req, res) { // user request on ip:3000/
-    res.render('experiments');
-}); 
-
-app.get('/profile/:name', function (req, res) { // user request on ip:3000/
-    var data = { age: 29, job: 'ninja', hobbies: ['peter', 'frands', 'lort']};
-    res.render('profile', { person: req.params.name, data: data});
+    res.render('_pages/experiments');
 }); 

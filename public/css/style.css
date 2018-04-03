@@ -1,0 +1,237 @@
+
+/* 
+    GENERAL STYLES
+*/
+
+
+body { 
+    font-family: Arial, Helvetica, sans-serif, serif; 
+    font-size: 12px; 
+    color: #000000; 
+    line-height: 1.5; padding: .5em 0;
+    text-align: justify;
+    background-color: #f9eacb; }
+
+h1 {
+    background-color: #f9eacb;
+}
+
+div {
+    background-color: #f9eacb;
+}
+
+p {
+    background-color: #f9eacb;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+hr {    
+    
+    border-style: dashed;
+    border-color:  #c0c0c0;
+    border-top:1px;
+    width: 90%;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* 
+   LINK
+*/
+
+a.navBar_index:link, a.navBar_about:link, 
+a.navBar_experiments:link{
+    
+    font-size:15px; 
+    font-weight: bold;
+    text-decoration: none;
+    border:none;
+    border-bottom: 1px solid #EF2400
+
+}
+
+a {
+    color: #000000;
+    font-size:12px;
+    text-decoration: none;
+    border-bottom: 1px solid #EF2400; 
+
+}
+
+a:hover { 
+    border-bottom:none; 
+    background-color:rgb(255, 172, 158);
+    border-bottom: 1px solid #EF2400; 
+    color: #000000; 
+}
+
+/* 
+    NAVIGATION
+*/
+
+#pad_top {
+    padding-top: 40px;
+}
+#navbar {
+    width: 90%;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-top: 20px;
+    
+    border: none;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+}
+.navbar_logoText {
+    text-align: left;
+    border: none; 
+    color: #a0a0a0;
+    font-size: 30px;
+}
+
+.navbar_SoMeIcons {
+    text-align: right;  
+    border: none; 
+    font-size: 12px; 
+}
+
+.menu_line {
+    padding-top: 5px;
+}
+.navbar_menu {
+    text-align: left;
+    border-collapse: collapse;
+    border-spacing: none;
+}
+
+.navbar_spacer {
+    text-align: center;
+    font-weight: bold;
+    color: #a0a0a0;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+
+.navbar_descriptionText {
+    text-align: right; 
+    color:#000000; 
+    font-size:15px; 
+ 
+}
+
+/* 
+    INDEX / PROJECT
+*/
+
+
+.project_div, .experiments_div {
+    width: 90%;
+    max-width: 950px;
+    margin: auto;
+    
+}
+
+.index_video_td, .experiments_video_td {
+        width: 58.333333333333%; 
+        vertical-align: text-top;
+        padding-right:10px;
+        padding-top: 6px;
+        
+    }
+
+    .main_video_div, .experiments_video_div {
+        background:none transparent;      
+        width: 500px;
+        text-align: justify;
+        padding: 0px;
+    }
+
+    .main_video_text_td, .experiments_video_text_td {
+        vertical-align: top;
+    }
+
+    .main_video_text_div, .experiments_video_text_div {
+        font-family: Arial, Helvetica, sans-serif, serif; 
+        font-size: 12px; 
+        line-height: 1.5; padding: .5em 0;
+        text-align: justify;
+        vertical-align: top;
+        padding: 0px;
+        border-collapse: collapse;
+
+        width: 100%;
+        min-width: 300px;
+     
+    }
+
+/* 
+    ABOUT PAGE
+*/
+
+#about_header_div {
+    width: 90%;
+    max-width: 950px;
+    margin: auto;
+
+}
+
+.about_headerImg {
+    width:100%;
+}
+
+#about_info_div {
+    border: 1px solid black;
+    width: 90%;
+    margin: auto;
+}
+.about_info_table{
+    table-layout: fixed;
+    width: 90%;
+    min-width: 815px;
+    max-width: 950px;
+    margin:auto;
+}
+
+.about_collaborators {
+    
+    margin: auto;
+   
+}
+.about_contact {
+   
+
+    height: 100%;
+    margin: auto;
+    vertical-align: top;
+    text-align: left;
+}
+.about_spektrogram_info {
+    width:95%;
+    margin: auto;
+    
+}
+.about_experience {
+    
+    height: 100%;
+    margin: auto;
+    vertical-align: top;
+    text-align: left;
+}
+
+/* 
+    EXPERIMENTS PAGE
+*/
