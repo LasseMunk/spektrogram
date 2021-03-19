@@ -1,0 +1,55 @@
+@import "config";
+@import "utilities";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  color: $dark-color;
+  line-height: 1.6;
+  background: $primary-color;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+  cursor: pointer;
+
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+
+  &:hover {
+    border-color: $medium-color;
+    color: red;
+  }
+  &.current {
+    border-color: $main-color;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+  }
+}
