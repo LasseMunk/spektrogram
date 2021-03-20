@@ -1,5 +1,6 @@
 @import "config";
 @import "utilities";
+@import "portfolio-grid";
 
 * {
   padding: 0;
@@ -38,9 +39,9 @@ a {
 ul {
   list-style: none;
 }
-
 hr {
-  margin: 1rem 0;
+  // the div is called project-hr
+  margin: 2rem 0;
   height: 1px;
   border-top: 1px dashed $medium-color;
   border-bottom: none;
@@ -76,23 +77,6 @@ img {
   }
 }
 
-// HOME GRID
-#showreel {
-  grid-area: showreel;
-}
-
-#lrrh {
-  grid-area: lrrh;
-}
-
-// PROJECTS GRID
-#home-grid {
-  display: grid;
-  grid-template-areas:
-    "showreel"
-    "lrrh";
-}
-
 // Video Showreel
 .iframe-container {
   position: relative;
@@ -116,8 +100,8 @@ img {
 .portfolio-section {
   .portfolio-grid {
     display: grid;
-    height: 100%;
     grid-template-columns: 1fr 1fr;
+    height: 100%;
     gap: 2rem;
 
     .portfolio-text {
@@ -127,13 +111,21 @@ img {
 
       // H2 + descriptive text
       &-description {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
+
         h2 {
+          padding: 0;
           color: $highlight-color;
-          text-decoration: underline 2px dotted $highlight-color;
+          text-transform: uppercase;
+          // text-decoration: underline 2px dotted $highlight-color;
         }
         p {
-          padding-top: 1rem;
+          padding-top: 0.85rem;
           font-size: 0.85rem;
+          text-align: justify;
 
           a {
             font-weight: bold;
@@ -143,6 +135,10 @@ img {
           }
           a:hover {
             border: none;
+          }
+          .text-pop {
+            font-weight: bold;
+            font-size: 1rem;
           }
         }
       }

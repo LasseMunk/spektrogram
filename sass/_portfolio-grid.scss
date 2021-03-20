@@ -1,0 +1,48 @@
+// PROJECTS GRID
+#showreel {
+  grid-area: showreel;
+}
+
+#lrrh {
+  grid-area: lrrh;
+}
+
+#dorthe {
+  grid-area: dorthe;
+}
+
+#vadehavscentret {
+  grid-area: vadehavscentret;
+}
+#breath {
+  grid-area: breath;
+}
+#dxm1 {
+  grid-area: dxm1;
+}
+#klo-faces {
+  grid-area: klo-faces;
+}
+#fantastic-voyage {
+  grid-area: fantastic-voyage;
+}
+#riyadh {
+  grid-area: riyadh;
+}
+
+// PROJECTS GRID
+#home-grid {
+  display: grid;
+  grid-template-areas:
+    "showreel"
+    "dorthe"
+    "breath"
+    "klo-faces"
+    "vadehavscentret"
+    "dxm1"
+    "lrrh"
+    "fantastic-voyage"
+    "rumkraft"
+    "riyadh"
+    "between-towers";
+}

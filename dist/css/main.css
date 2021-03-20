@@ -16,6 +16,47 @@
   overflow: hidden;
 }
 
+#showreel {
+  grid-area: showreel;
+}
+
+#lrrh {
+  grid-area: lrrh;
+}
+
+#dorthe {
+  grid-area: dorthe;
+}
+
+#vadehavscentret {
+  grid-area: vadehavscentret;
+}
+
+#breath {
+  grid-area: breath;
+}
+
+#dxm1 {
+  grid-area: dxm1;
+}
+
+#klo-faces {
+  grid-area: klo-faces;
+}
+
+#fantastic-voyage {
+  grid-area: fantastic-voyage;
+}
+
+#riyadh {
+  grid-area: riyadh;
+}
+
+#home-grid {
+  display: grid;
+  grid-template-areas: "showreel" "dorthe" "breath" "klo-faces" "vadehavscentret" "dxm1" "lrrh" "fantastic-voyage" "rumkraft" "riyadh" "between-towers";
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -55,7 +96,7 @@ ul {
 }
 
 hr {
-  margin: 1rem 0;
+  margin: 2rem 0;
   height: 1px;
   border-top: 1px dashed #c0c0c0;
   border-bottom: none;
@@ -93,19 +134,6 @@ img {
   font-size: 1rem;
 }
 
-#showreel {
-  grid-area: showreel;
-}
-
-#lrrh {
-  grid-area: lrrh;
-}
-
-#home-grid {
-  display: grid;
-  grid-template-areas: "showreel" "lrrh";
-}
-
 .iframe-container {
   position: relative;
   overflow: hidden;
@@ -126,8 +154,8 @@ img {
 
 .portfolio-section .portfolio-grid {
   display: grid;
-  height: 100%;
   grid-template-columns: 1fr 1fr;
+  height: 100%;
   gap: 2rem;
 }
 
@@ -137,14 +165,23 @@ img {
   flex-direction: column;
 }
 
+.portfolio-section .portfolio-grid .portfolio-text-description {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 .portfolio-section .portfolio-grid .portfolio-text-description h2 {
+  padding: 0;
   color: #ff0000;
-  text-decoration: underline 2px dotted #ff0000;
+  text-transform: uppercase;
 }
 
 .portfolio-section .portfolio-grid .portfolio-text-description p {
-  padding-top: 1rem;
+  padding-top: 0.85rem;
   font-size: 0.85rem;
+  text-align: justify;
 }
 
 .portfolio-section .portfolio-grid .portfolio-text-description p a {
@@ -156,6 +193,11 @@ img {
 
 .portfolio-section .portfolio-grid .portfolio-text-description p a:hover {
   border: none;
+}
+
+.portfolio-section .portfolio-grid .portfolio-text-description p .text-pop {
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .portfolio-section .portfolio-grid .portfolio-text-credit {
