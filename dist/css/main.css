@@ -52,9 +52,21 @@
   grid-area: riyadh;
 }
 
+#between-towers {
+  grid-area: between-towers;
+}
+
+#helix {
+  grid-area: helix;
+}
+
+#hodja-01 {
+  grid-area: hodja-01;
+}
+
 #home-grid {
   display: grid;
-  grid-template-areas: "showreel" "dorthe" "breath" "klo-faces" "vadehavscentret" "dxm1" "lrrh" "fantastic-voyage" "rumkraft" "riyadh" "between-towers";
+  grid-template-areas: "showreel" "dorthe" "breath" "klo-faces" "vadehavscentret" "dxm1" "lrrh" "fantastic-voyage" "rumkraft" "riyadh" "between-towers" "helix" "hodja-01";
 }
 
 * {

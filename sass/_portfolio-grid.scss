@@ -29,6 +29,15 @@
 #riyadh {
   grid-area: riyadh;
 }
+#between-towers {
+  grid-area: between-towers;
+}
+#helix {
+  grid-area: helix;
+}
+#hodja-01 {
+  grid-area: hodja-01;
+}
 
 // PROJECTS GRID
 #home-grid {
@@ -44,5 +53,7 @@
     "fantastic-voyage"
     "rumkraft"
     "riyadh"
-    "between-towers";
+    "between-towers"
+    "helix"
+    "hodja-01";
 }
