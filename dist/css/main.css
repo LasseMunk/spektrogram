@@ -1,0 +1,186 @@
+.light-color {
+  color: #a0a0a0;
+}
+
+.dark-color {
+  color: #333;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 950px;
+  margin: auto;
+  overflow: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background: #f9eacb;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  border-bottom: 2px transparent dotted;
+  padding-bottom: 0.5rem;
+  transition: all 0.5s;
+}
+
+a:hover {
+  border-bottom: 2px dotted #ff0000;
+  color: #ff0000;
+}
+
+a.current {
+  border-bottom: 2px dotted #ff0000;
+  color: #ff0000;
+}
+
+ul {
+  list-style: none;
+}
+
+hr {
+  margin: 1rem 0;
+  height: 1px;
+  border-top: 1px dashed #c0c0c0;
+  border-bottom: none;
+}
+
+img {
+  width: 100%;
+}
+
+#main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#main-nav ul {
+  display: flex;
+}
+
+#main-nav li {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+#main-nav li:first-child {
+  padding: 0.5rem 0.5rem 0.5rem 0rem;
+}
+
+#main-nav li:last-child {
+  padding: 0.5rem 0rem 0.5rem 0.5rem;
+}
+
+#main-nav .nav-separator {
+  font-size: 1rem;
+}
+
+#showreel {
+  grid-area: showreel;
+}
+
+#lrrh {
+  grid-area: lrrh;
+}
+
+#home-grid {
+  display: grid;
+  grid-template-areas: "showreel" "lrrh";
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.iframe-container #iframe-showreel,
+.iframe-container #portfolio-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-section .portfolio-grid {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.portfolio-section .portfolio-grid .portfolio-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-section .portfolio-grid .portfolio-text-description h2 {
+  color: #ff0000;
+  text-decoration: underline 2px dotted #ff0000;
+}
+
+.portfolio-section .portfolio-grid .portfolio-text-description p {
+  padding-top: 1rem;
+  font-size: 0.85rem;
+}
+
+.portfolio-section .portfolio-grid .portfolio-text-description p a {
+  font-weight: bold;
+  border-bottom: none;
+  padding-bottom: 0.5rem;
+  transition: border-color, color 0.5s;
+}
+
+.portfolio-section .portfolio-grid .portfolio-text-description p a:hover {
+  border: none;
+}
+
+.portfolio-section .portfolio-grid .portfolio-text-credit {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-grid li {
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+.footer-grid a {
+  border-bottom: none;
+}
+
+.footer-grid a:hover {
+  border: none;
+}

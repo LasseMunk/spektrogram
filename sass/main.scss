@@ -7,8 +7,10 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+html {
   font-family: $font-family;
+  // font-size: 62.5%;
   color: $dark-color;
   line-height: 1.6;
   background: $primary-color;
@@ -16,24 +18,32 @@ body {
 
 a {
   text-decoration: none;
+  font-size: $navbar-fontsize;
   color: $dark-color;
   cursor: pointer;
-
-  border-bottom: 3px transparent solid;
+  border-bottom: 2px transparent dotted;
   padding-bottom: 0.5rem;
-  transition: border-color 0.5s;
+  transition: all 0.5s;
 
   &:hover {
-    border-color: $medium-color;
-    color: red;
+    border-bottom: 2px dotted $highlight-color;
+    color: $highlight-color;
   }
   &.current {
-    border-color: $main-color;
+    border-bottom: 2px dotted $highlight-color;
+    color: $highlight-color;
   }
 }
 
 ul {
   list-style: none;
+}
+
+hr {
+  margin: 1rem 0;
+  height: 1px;
+  border-top: 1px dashed $medium-color;
+  border-bottom: none;
 }
 
 img {
@@ -42,14 +52,128 @@ img {
 
 #main-nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
   ul {
     display: flex;
   }
 
   li {
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+
+    &:first-child {
+      padding: 0.5rem 0.5rem 0.5rem 0rem;
+    }
+    &:last-child {
+      padding: 0.5rem 0rem 0.5rem 0.5rem;
+    }
+  }
+  .nav-separator {
+    font-size: $navbar-fontsize;
+  }
+}
+
+// HOME GRID
+#showreel {
+  grid-area: showreel;
+}
+
+#lrrh {
+  grid-area: lrrh;
+}
+
+// PROJECTS GRID
+#home-grid {
+  display: grid;
+  grid-template-areas:
+    "showreel"
+    "lrrh";
+}
+
+// Video Showreel
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  // 16:9 Aspect Ratio: 9 / 16 = 0.5625
+  padding-top: 56.25%;
+
+  #iframe-showreel,
+  #portfolio-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.portfolio-section {
+  .portfolio-grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    .portfolio-text {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      // H2 + descriptive text
+      &-description {
+        h2 {
+          color: $highlight-color;
+          text-decoration: underline 2px dotted $highlight-color;
+        }
+        p {
+          padding-top: 1rem;
+          font-size: 0.85rem;
+
+          a {
+            font-weight: bold;
+            border-bottom: none;
+            padding-bottom: 0.5rem;
+            transition: border-color, color 0.5s;
+          }
+          a:hover {
+            border: none;
+          }
+        }
+      }
+
+      // spektrogram credits
+      &-credit {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding-top: 1rem;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+// Footer
+
+.footer-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  li {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+
+  a {
+    border-bottom: none;
+  }
+  a:hover {
+    border: none;
   }
 }
