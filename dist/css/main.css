@@ -145,6 +145,19 @@
   text-align: justify;
 }
 
+#cv-grid .cv-entries .cv-arw {
+  color: #ff0000;
+  margin-right: 3px;
+}
+
+#cv-grid .cv-entries .cv-title {
+  font-weight: bold;
+}
+
+#cv-grid .cv-entries .cv-work {
+  color: #ff0000;
+}
+
 @media print {
   #img-gallery {
     display: none;
@@ -164,6 +177,15 @@
   @page {
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+  #cv-grid .cv-entries .cv-year {
+    color: #000;
+  }
+  #cv-grid .cv-entries .cv-title {
+    color: #000;
+  }
+  #cv-grid .cv-entries .cv-work {
+    color: #000;
   }
 }
 

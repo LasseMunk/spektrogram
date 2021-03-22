@@ -68,5 +68,17 @@
 
   .cv-entries {
     text-align: justify;
+    .cv-arw {
+      color: $highlight-color;
+      margin-right: 3px;
+    }
+    .cv-title {
+      font-weight: bold;
+    }
+    .cv-work {
+      color: $highlight-color;
+      // text-decoration:underline;
+      
+    }
   }
 }

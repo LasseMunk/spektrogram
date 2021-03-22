@@ -22,4 +22,19 @@
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
+  // Colors
+  #cv-grid {
+    .cv-entries {
+      .cv-year {
+        color: #000;
+      }
+      .cv-title {
+        color: #000;
+      }
+      .cv-work {
+        color: #000;
+      }
+    }
+  }
 }
