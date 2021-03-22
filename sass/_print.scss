@@ -1,0 +1,25 @@
+@media print {
+  #img-gallery {
+    display: none;
+  }
+  #header-home {
+    display: none;
+  }
+
+  #main-footer {
+    display: none;
+  }
+
+  body {
+    font-size: 10px;
+  }
+
+  hr {
+    display: none;
+  }
+  @page {
+    // removes-date and title of page
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}

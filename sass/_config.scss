@@ -6,7 +6,8 @@ $old-grey-color: #a0a0a0;
 $dark-color: #333;
 $highlight-color: #ff0000;
 
-$website-width: 950px;
+$website-width: 960px;
+// lets about images be 320px wide
 
 // $font-family: "Press Start 2P", cursive;
 $font-family: "Lato", sans-serif;
@@ -14,7 +15,6 @@ $font-family: "Lato", sans-serif;
 $navbar-fontsize: 1rem;
 
 // text colors
-
 .light-color {
   color: $old-grey-color;
 }

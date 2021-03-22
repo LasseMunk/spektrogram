@@ -1,0 +1,72 @@
+#img-gallery-grid {
+  display: grid;
+
+  #img-speakers-on-line {
+    grid-area: speakers-on-line;
+  }
+  #img-aarhus-teater {
+    grid-area: aarhus-teater;
+  }
+  #img-klo-in-brazil {
+    grid-area: klo-in-brazil;
+  }
+  #img-dxm01 {
+    grid-area: dxm01;
+  }
+  #img-herve-studio {
+    grid-area: herve-studio;
+  }
+  #img-illutron {
+    grid-area: illutron;
+  }
+  #img-5e {
+    grid-area: 5e;
+  }
+  #img-skovgaard {
+    grid-area: skovgaard;
+  }
+  #img-ableton-loop {
+    grid-area: ableton-loop;
+  }
+  #img-max-msp {
+    grid-area: max-msp;
+  }
+  #img-testing-microphones {
+    grid-area: testing-microphones;
+  }
+  #img-concert-overgaden {
+    grid-area: concert-overgaden;
+  }
+  #img-helix {
+    grid-area: helix;
+  }
+
+  grid-template-areas:
+    "speakers-on-line speakers-on-line speakers-on-line"
+    "aarhus-teater klo-in-brazil dxm01"
+    "herve-studio illutron 5e"
+    "skovgaard ableton-loop max-msp"
+    "testing-microphones concert-overgaden helix";
+
+  img {
+    background: no-repeat center center / cover;
+    width: 100%;
+  }
+}
+
+#cv-grid {
+  margin: 2rem 0 2rem 0;
+
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+
+  .cv-year {
+    p {
+      font-weight: bold;
+    }
+  }
+
+  .cv-entries {
+    text-align: justify;
+  }
+}
