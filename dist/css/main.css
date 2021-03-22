@@ -137,6 +137,10 @@
   grid-template-columns: 1fr 6fr;
 }
 
+#cv-grid .cv-year {
+  border-top: 1px dashed #a0a0a0;
+}
+
 #cv-grid .cv-year p {
   font-weight: bold;
 }
