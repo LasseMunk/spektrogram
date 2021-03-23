@@ -131,6 +131,56 @@
   width: 100%;
 }
 
+#cv-profile-and-contact-info {
+  margin: 2rem 0 2rem 0;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-gap: 1rem;
+}
+
+#cv-profile-and-contact-info .profile-arw {
+  color: red;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#cv-profile-and-contact-info .profile-content {
+  font-weight: bold;
+}
+
+#cv-profile-and-contact-info .education-description {
+  font-weight: bold;
+}
+
+#cv-profile-and-contact-info .profile-content,
+#cv-profile-and-contact-info .profile-content-description,
+#cv-profile-and-contact-info .education-year,
+#cv-profile-and-contact-info .education-description {
+  font-size: 0.95rem;
+}
+
+#cv-profile-and-contact-info #phonenumber {
+  font-size: 0.92rem;
+}
+
+#cv-profile-and-contact-info #lasse-tagline {
+  padding-bottom: 1rem;
+}
+
+#cv-profile-and-contact-info #education {
+  padding-top: 1rem;
+}
+
+#cv h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#cv h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
 #cv-grid {
   margin: 2rem 0 2rem 0;
   display: grid;
