@@ -69,12 +69,12 @@
     font-weight: bold;
   }
 
-  .education-year {
-    // font-weight: bold;
-  }
-
   .education-description {
     font-weight: bold;
+  }
+
+  .education-arw {
+    @extend .profile-arw;
   }
 
   .profile-content,
@@ -108,30 +108,59 @@
 }
 
 #cv-grid {
+  .arrow {
+    color: $highlight-color;
+    margin-right: 3px;
+  }
+
+  .title {
+    font-weight: bold;
+  }
+
+  .year {
+    p {
+      font-weight: bold;
+    }
+    border-top: 1px dashed $old-grey-color;
+    margin-right: 1rem;
+  }
+
   margin: 2rem 0 2rem 0;
   display: grid;
   grid-template-columns: 1fr 6fr;
 
   .cv-year {
-    p {
-      font-weight: bold;
-    }
-
-    border-top: 1px dashed $old-grey-color;
+    @extend .year;
   }
-
   .cv-entries {
     text-align: justify;
+    margin-bottom: 1rem;
     .cv-arw {
-      color: $highlight-color;
-      margin-right: 3px;
+      @extend .arrow;
     }
     .cv-title {
-      font-weight: bold;
+      @extend .title;
     }
     .cv-work {
       color: $highlight-color;
-      // text-decoration:underline;
+    }
+  }
+
+  a {
+    border-bottom: 1px dashed $highlight-color;
+    padding-bottom: 0rem;
+  }
+
+  .grants-header {
+    @extend .year;
+  }
+
+  .grants-entries {
+    .grants-arw {
+      @extend .arrow;
+    }
+    .grants-title {
+      @extend .title;
     }
   }
 }

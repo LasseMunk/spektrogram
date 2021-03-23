@@ -1,4 +1,4 @@
-@media (max-width: 970px) {
+@media screen and (max-width: 970px) {
   #main-nav {
     width: 100%;
     padding: 1rem 2rem;
@@ -15,9 +15,21 @@
       height: 100%;
     }
   }
+  #cv {
+    #cv-profile-and-contact-info {
+      display: block;
+    }
+    .cv-profile-img {
+      display: none;
+    }
+  }
+  .cv-entries li p {
+    margin-bottom: 1rem;
+  }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  // tablets
   .logo {
     font-size: 0.85rem;
     // display:none;
@@ -68,14 +80,99 @@
   .logo {
     margin-bottom: 1rem;
   }
+
+  // about section
+
+  #img-gallery-grid {
+    grid-template-areas:
+      "speakers-on-line speakers-on-line"
+      "aarhus-teater klo-in-brazil "
+      "dxm01 herve-studio"
+      "illutron 5e"
+      "skovgaard ableton-loop"
+      "max-msp testing-microphones"
+      "concert-overgaden helix";
+  }
+
+  .cv-entries li p {
+    margin-bottom: 1rem;
+  }
+
+  // #print-btn {
+  //   display:none;
+  // }
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
   #nav-main {
     padding: 1rem 0rem 1rem 0rem;
   }
   .logo {
     font-size: 0.5rem;
     // display:none;
+  }
+
+  #img-gallery-grid {
+    display: grid;
+
+    #img-helix,
+    #img-concert-overgaden,
+    #img-max-msp,
+    #img-ableton-loop,
+    #img-dxm01,
+    #img-speakers-on-line {
+      display: none;
+    }
+    grid-template-columns: auto;
+    grid-template-areas:
+      "illutron"
+      "testing-microphones"
+      "herve-studio"
+      "aarhus-teater"
+      "klo-in-brazil"
+      "skovgaard"
+      "5e";
+  }
+
+  .profile-entries {
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .education-year {
+    display: none;
+  }
+  .education-arw {
+    display: none;
+  }
+
+  #cv-grid {
+    grid-template-columns: 1fr;
+
+    .cv-entries {
+      text-align: left;
+      .cv-arw {
+        display: none;
+      }
+    }
+    .cv-year:first-child {
+      border: none;
+    }
+    .cv-year {
+      padding: 0.5rem 0 0.5rem 0;
+    }
+  }
+
+  .grants-header {
+    padding: 0.5rem 0 0.5rem 0;
+  }
+  .grants-arw {
+    display: none;
+  }
+  .grants-entries {
+    li {
+      margin-bottom: 0.5rem;
+    }
   }
 }

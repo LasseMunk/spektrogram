@@ -16,6 +16,36 @@
   overflow: hidden;
 }
 
+.btn {
+  cursor: pointer;
+  margin-bottom: 2rem;
+  height: 66px;
+  width: 200px;
+  font-size: 1.2rem;
+  background: #f9eacb;
+  border: 1px dashed #ff0000;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background: #ff0000;
+  color: #f9eacb;
+}
+
+.btn:focus,
+.btn:visited,
+.btn:active {
+  border: 1px dashed #ff0000;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 #showreel {
   grid-area: showreel;
 }
@@ -138,7 +168,7 @@
   grid-gap: 1rem;
 }
 
-#cv-profile-and-contact-info .profile-arw {
+#cv-profile-and-contact-info .profile-arw, #cv-profile-and-contact-info .education-arw {
   color: red;
   margin-right: 5px;
   margin-left: 5px;
@@ -187,29 +217,36 @@
   grid-template-columns: 1fr 6fr;
 }
 
-#cv-grid .cv-year {
-  border-top: 1px dashed #a0a0a0;
+#cv-grid .arrow, #cv-grid .cv-entries .cv-arw, #cv-grid .grants-entries .grants-arw {
+  color: #ff0000;
+  margin-right: 3px;
 }
 
-#cv-grid .cv-year p {
+#cv-grid .title, #cv-grid .cv-entries .cv-title, #cv-grid .grants-entries .grants-title {
+  font-weight: bold;
+}
+
+#cv-grid .year, #cv-grid .cv-year, #cv-grid .grants-header {
+  border-top: 1px dashed #a0a0a0;
+  margin-right: 1rem;
+}
+
+#cv-grid .year p, #cv-grid .cv-year p, #cv-grid .grants-header p {
   font-weight: bold;
 }
 
 #cv-grid .cv-entries {
   text-align: justify;
-}
-
-#cv-grid .cv-entries .cv-arw {
-  color: #ff0000;
-  margin-right: 3px;
-}
-
-#cv-grid .cv-entries .cv-title {
-  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 #cv-grid .cv-entries .cv-work {
   color: #ff0000;
+}
+
+#cv-grid a {
+  border-bottom: 1px dashed #ff0000;
+  padding-bottom: 0rem;
 }
 
 @media print {
@@ -232,14 +269,44 @@
     margin-top: 30px;
     margin-bottom: 30px;
   }
+  #cv #lasse-tagline,
+  #cv .profile-content-description,
+  #cv #phonenumber,
+  #cv .profile-content,
+  #cv .profile-arw,
+  #cv #cv-profile-and-contact-info .education-arw,
+  #cv-profile-and-contact-info #cv .education-arw,
+  #cv .education-year,
+  #cv .education-description {
+    font-size: 10px;
+  }
+  #cv-profile-and-contact-info {
+    margin-bottom: 0.5rem;
+  }
+  #cv-grid {
+    margin-top: 1rem;
+  }
+  #cv-grid .cv-entries {
+    margin-bottom: 0.3rem !important;
+  }
+  #cv-grid .cv-entries li p {
+    margin-bottom: 0rem;
+  }
   #cv-grid .cv-entries .cv-year {
     color: #000;
   }
   #cv-grid .cv-entries .cv-title {
     color: #000;
   }
+  #cv-grid .cv-entries .cv-title a {
+    font-size: 10px;
+    border: none;
+  }
   #cv-grid .cv-entries .cv-work {
     color: #000;
+  }
+  .btn {
+    display: none;
   }
 }
 
@@ -414,7 +481,7 @@ img {
   border: none;
 }
 
-@media (max-width: 970px) {
+@media screen and (max-width: 970px) {
   #main-nav {
     width: 100%;
     padding: 1rem 2rem;
@@ -427,9 +494,18 @@ img {
     grid-template-columns: 1fr;
     height: 100%;
   }
+  #cv #cv-profile-and-contact-info {
+    display: block;
+  }
+  #cv .cv-profile-img {
+    display: none;
+  }
+  .cv-entries li p {
+    margin-bottom: 1rem;
+  }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .logo {
     font-size: 0.85rem;
   }
@@ -472,13 +548,65 @@ img {
   .logo {
     margin-bottom: 1rem;
   }
+  #img-gallery-grid {
+    grid-template-areas: "speakers-on-line speakers-on-line" "aarhus-teater klo-in-brazil " "dxm01 herve-studio" "illutron 5e" "skovgaard ableton-loop" "max-msp testing-microphones" "concert-overgaden helix";
+  }
+  .cv-entries li p {
+    margin-bottom: 1rem;
+  }
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
   #nav-main {
     padding: 1rem 0rem 1rem 0rem;
   }
   .logo {
     font-size: 0.5rem;
+  }
+  #img-gallery-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "illutron" "testing-microphones" "herve-studio" "aarhus-teater" "klo-in-brazil" "skovgaard" "5e";
+  }
+  #img-gallery-grid #img-helix,
+  #img-gallery-grid #img-concert-overgaden,
+  #img-gallery-grid #img-max-msp,
+  #img-gallery-grid #img-ableton-loop,
+  #img-gallery-grid #img-dxm01,
+  #img-gallery-grid #img-speakers-on-line {
+    display: none;
+  }
+  .profile-entries li {
+    margin-bottom: 0.5rem;
+  }
+  .education-year {
+    display: none;
+  }
+  .education-arw {
+    display: none;
+  }
+  #cv-grid {
+    grid-template-columns: 1fr;
+  }
+  #cv-grid .cv-entries {
+    text-align: left;
+  }
+  #cv-grid .cv-entries .cv-arw {
+    display: none;
+  }
+  #cv-grid .cv-year:first-child {
+    border: none;
+  }
+  #cv-grid .cv-year {
+    padding: 0.5rem 0 0.5rem 0;
+  }
+  .grants-header {
+    padding: 0.5rem 0 0.5rem 0;
+  }
+  .grants-arw {
+    display: none;
+  }
+  .grants-entries li {
+    margin-bottom: 0.5rem;
   }
 }
