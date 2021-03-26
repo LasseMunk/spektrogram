@@ -87,7 +87,7 @@
   #img-gallery-grid {
     grid-template-areas:
       "speakers-on-line speakers-on-line"
-      "aarhus-teater klo-in-brazil "
+      "aarhus-teater klo-in-brazil"
       "dxm01 herve-studio"
       "illutron 5e"
       "skovgaard ableton-loop"
@@ -104,13 +104,12 @@
   // }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 520px) {
   #nav-main {
-    padding: 1rem 0rem 1rem 0rem;
+    padding: 1rem 0 1rem 0;
   }
   .logo {
     font-size: 0.5rem;
-    // display:none;
   }
 
   #img-gallery-grid {

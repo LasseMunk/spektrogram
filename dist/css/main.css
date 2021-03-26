@@ -246,7 +246,7 @@
 
 #cv-grid a {
   border-bottom: 1px dashed #ff0000;
-  padding-bottom: 0rem;
+  padding-bottom: 0;
 }
 
 @media print {
@@ -290,7 +290,7 @@
     margin-bottom: 0.3rem !important;
   }
   #cv-grid .cv-entries li p {
-    margin-bottom: 0rem;
+    margin-bottom: 0;
   }
   #cv-grid .cv-entries .cv-year {
     color: #000;
@@ -381,11 +381,11 @@ img {
 }
 
 #main-nav li:first-child {
-  padding: 0.5rem 0.5rem 0.5rem 0rem;
+  padding: 0.5rem 0.5rem 0.5rem 0;
 }
 
 #main-nav li:last-child {
-  padding: 0.5rem 0rem 0.5rem 0.5rem;
+  padding: 0.5rem 0 0.5rem 0.5rem;
 }
 
 #main-nav .nav-separator {
@@ -549,16 +549,16 @@ img {
     margin-bottom: 1rem;
   }
   #img-gallery-grid {
-    grid-template-areas: "speakers-on-line speakers-on-line" "aarhus-teater klo-in-brazil " "dxm01 herve-studio" "illutron 5e" "skovgaard ableton-loop" "max-msp testing-microphones" "concert-overgaden helix";
+    grid-template-areas: "speakers-on-line speakers-on-line" "aarhus-teater klo-in-brazil" "dxm01 herve-studio" "illutron 5e" "skovgaard ableton-loop" "max-msp testing-microphones" "concert-overgaden helix";
   }
   .cv-entries li p {
     margin-bottom: 1rem;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 520px) {
   #nav-main {
-    padding: 1rem 0rem 1rem 0rem;
+    padding: 1rem 0 1rem 0;
   }
   .logo {
     font-size: 0.5rem;
