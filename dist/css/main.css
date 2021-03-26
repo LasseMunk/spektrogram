@@ -488,10 +488,10 @@ img {
   }
   .container {
     padding: 0 2rem;
+    width: 100vw;
   }
   .portfolio-section .portfolio-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block;
     height: 100%;
   }
   #cv #cv-profile-and-contact-info {
